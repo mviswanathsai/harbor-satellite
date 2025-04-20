@@ -13,7 +13,7 @@ func (cm *ConfigManager) IsZTRDone() bool {
 func (cm *ConfigManager) GetLogLevel() string {
 	cm.mu.RLock()
 	defer cm.mu.RUnlock()
-	return cm.config.AppConfig.LogLevel
+	return string(cm.config.AppConfig.LogLevel)
 }
 
 func (cm *ConfigManager) GetOwnRegistry() bool {
