@@ -11,7 +11,7 @@ func SetStateURL(url string) func(*Config) {
 func SetStateAuth(username, password string, registryURL URL) func(*Config) {
 	return func(cfg *Config) {
 		cfg.StateConfig.RegistryCredentials.Username = username
-		cfg.StateConfig.RegistryCredentials.URL = URL(registryURL)
+		cfg.StateConfig.RegistryCredentials.URL = registryURL
 		cfg.StateConfig.RegistryCredentials.Password = password
 	}
 }
