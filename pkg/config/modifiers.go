@@ -99,3 +99,4 @@ func SetLocalRegistryCredentials(creds RegistryCredentials) func(*Config) {
 		cfg.AppConfig.LocalRegistryCredentials = creds
 	}
 }
+
